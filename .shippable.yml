@@ -1,0 +1,9 @@
+---
+
+integrations:
+  hub:
+    - integrationName: packetfield-gcr
+      type: gcloudKey
+build:
+  post_ci:
+    - docker push gcr.io/packetfield/image-example-python:latest
